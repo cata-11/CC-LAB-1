@@ -112,7 +112,7 @@ const createBook = (req, res) => {
 
 const createBookWithId = (req, res, id) => {
   connection.query(
-    'SELECT * FROM Books WHERE id = ?',
+    'SELECT * FROM Books WHERE Id = ?',
     id,
     function (error, results, fields) {
       if (error) {
